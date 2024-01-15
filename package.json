@@ -1,0 +1,14 @@
+{
+  "name": "css.normalizer",
+  "version": "1.0.0",
+  "description": "A modern alternative to CSS resets",
+  "main": "normalize2024.css",
+  "style": "normalize2024.css",
+  "files": [
+    "normalize2024.css",
+    "lICENSE"
+  ],
+  "keywords": ["normalize.css", "normalize", "css", "reset"],
+  "author": "Manuel Heredia",
+  "license": "MIT"
+}

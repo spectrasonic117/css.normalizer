@@ -1,0 +1,41 @@
+/* Normalize 2024 */
+
+/* 
+███╗   ██╗ ██████╗ ██████╗ ███╗   ███╗ █████╗ ██╗     ██╗███████╗███████╗
+████╗  ██║██╔═══██╗██╔══██╗████╗ ████║██╔══██╗██║     ██║╚══███╔╝██╔════╝
+██╔██╗ ██║██║   ██║██████╔╝██╔████╔██║███████║██║     ██║  ███╔╝ █████╗
+██║╚██╗██║██║   ██║██╔══██╗██║╚██╔╝██║██╔══██║██║     ██║ ███╔╝  ██╔══╝
+██║ ╚████║╚██████╔╝██║  ██║██║ ╚═╝ ██║██║  ██║███████╗██║███████╗███████╗
+╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚══════╝╚══════╝
+
+██████╗  ██████╗ ██████╗ ██╗  ██╗
+╚════██╗██╔═████╗╚════██╗██║  ██║
+ █████╔╝██║██╔██║ █████╔╝███████║
+██╔═══╝ ████╔╝██║██╔═══╝ ╚════██║
+███████╗╚██████╔╝███████╗     ██║
+╚══════╝ ╚═════╝ ╚══════╝     ╚═╝ 
+
+*/
+ * {
+  /* Include Padding and border in size calulation */
+  box-sizing: border-box;
+  /* Posiiton based on imitate parent and awllow ajusting in the 4 directions */
+  position: relative;
+  /* Prevent grid & flex items from spilling out of the container */
+  min-width: 0;
+}
+
+body {
+  /* Ensure that the body fills entire viewport */
+  min-height: 100dvh;
+}
+
+h1, h2, h3, h4 {
+  /* Balance the headings across multiples lines into an even block */
+  text-wrap: balance;
+}
+
+p {
+  /* Prevent text orphans - Single words on last lines */
+  text-wrap: pretty;
+}
