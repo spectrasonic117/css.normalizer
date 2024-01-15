@@ -1,6 +1,6 @@
 {
   "name": "css.normalizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern alternative to CSS resets",
   "main": "normalize2024.css",
   "style": "normalize2024.css",
