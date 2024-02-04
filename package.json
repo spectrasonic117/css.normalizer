@@ -1,6 +1,6 @@
 {
   "name": "css.normalizer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A modern alternative to CSS resets",
   "main": "normalize.css",
   "style": "normalize.css",
@@ -8,7 +8,12 @@
     "normalize2024.css",
     "lICENSE"
   ],
-  "keywords": ["normalize.css", "normalize", "css", "reset"],
+  "keywords": [
+    "normalize.css",
+    "normalize",
+    "css",
+    "reset"
+  ],
   "author": "Manuel Heredia",
   "license": "MIT"
 }
