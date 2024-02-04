@@ -1,41 +1,67 @@
-/* Normalize 2024 */
+/* Normalize 2024 A modern alternative to CSS resets */
 
-/* 
-███╗   ██╗ ██████╗ ██████╗ ███╗   ███╗ █████╗ ██╗     ██╗███████╗███████╗
-████╗  ██║██╔═══██╗██╔══██╗████╗ ████║██╔══██╗██║     ██║╚══███╔╝██╔════╝
-██╔██╗ ██║██║   ██║██████╔╝██╔████╔██║███████║██║     ██║  ███╔╝ █████╗
-██║╚██╗██║██║   ██║██╔══██╗██║╚██╔╝██║██╔══██║██║     ██║ ███╔╝  ██╔══╝
-██║ ╚████║╚██████╔╝██║  ██║██║ ╚═╝ ██║██║  ██║███████╗██║███████╗███████╗
-╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚══════╝╚══════╝
+:root {
+	--black: #393939;
+	--main-font: Helvetica, Arial, sans-serif;
+	--secondary-font: Verdana;
+}
 
-██████╗  ██████╗ ██████╗ ██╗  ██╗
-╚════██╗██╔═████╗╚════██╗██║  ██║
- █████╔╝██║██╔██║ █████╔╝███████║
-██╔═══╝ ████╔╝██║██╔═══╝ ╚════██║
-███████╗╚██████╔╝███████╗     ██║
-╚══════╝ ╚═════╝ ╚══════╝     ╚═╝ 
+@media (prefers-color-scheme: dark) {
+	:root {
+		--negro: #ececec;
+	}
+}
 
-*/
- * {
-  /* Include Padding and border in size calulation */
-  box-sizing: border-box;
-  /* Posiiton based on imitate parent and awllow ajusting in the 4 directions */
-  position: relative;
-  /* Prevent grid & flex items from spilling out of the container */
-  min-width: 0;
+* {
+	box-sizing: border-box;
+	position: relative;
+	min-width: 0;
 }
 
 body {
-  /* Ensure that the body fills entire viewport */
-  min-height: 100dvh;
+	min-height: 100dvh;
+	font-family: var(--tipo-principal);
+	color: var(--negro);
+	font-smooth: always;
+	min-height: 100vh;
+	font-size: 100%;
 }
 
-h1, h2, h3, h4 {
-  /* Balance the headings across multiples lines into an even block */
-  text-wrap: balance;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
 }
 
 p {
-  /* Prevent text orphans - Single words on last lines */
-  text-wrap: pretty;
+	text-wrap: pretty;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
+}
+
+p:has(a) {
+	display: inline;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg {
+	width: 100%;
+	display: block;
+	fill: currentColor;
 }
