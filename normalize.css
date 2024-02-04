@@ -20,7 +20,7 @@
 
 body {
 	min-height: 100dvh;
-	font-family: var(--tipo-principal);
+	font-family: var(--main-font);
 	color: var(--negro);
 	font-smooth: always;
 	min-height: 100vh;
